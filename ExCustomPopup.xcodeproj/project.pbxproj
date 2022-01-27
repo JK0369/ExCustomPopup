@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43E2E02ECDAD27EE50FF4048 /* Pods_ExCustomPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2CD492AB54E64C4398ECC5 /* Pods_ExCustomPopup.framework */; };
 		C673BEA027A2BFA8002E7276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BE9F27A2BFA8002E7276 /* AppDelegate.swift */; };
 		C673BEA227A2BFA8002E7276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BEA127A2BFA8002E7276 /* SceneDelegate.swift */; };
 		C673BEA427A2BFA8002E7276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BEA327A2BFA8002E7276 /* ViewController.swift */; };
 		C673BEA727A2BFA8002E7276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C673BEA527A2BFA8002E7276 /* Main.storyboard */; };
 		C673BEA927A2BFAA002E7276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C673BEA827A2BFAA002E7276 /* Assets.xcassets */; };
 		C673BEAC27A2BFAA002E7276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C673BEAA27A2BFAA002E7276 /* LaunchScreen.storyboard */; };
+		C673BEB427A2C02D002E7276 /* MyPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BEB327A2C02D002E7276 /* MyPopupViewController.swift */; };
+		C673BEB627A2C05F002E7276 /* MyPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BEB527A2C05F002E7276 /* MyPopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B854C7D9C54098A72E98CC /* Pods-ExCustomPopup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExCustomPopup.release.xcconfig"; path = "Target Support Files/Pods-ExCustomPopup/Pods-ExCustomPopup.release.xcconfig"; sourceTree = "<group>"; };
+		554F93CD40CC77DEA71C16EC /* Pods-ExCustomPopup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExCustomPopup.debug.xcconfig"; path = "Target Support Files/Pods-ExCustomPopup/Pods-ExCustomPopup.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2CD492AB54E64C4398ECC5 /* Pods_ExCustomPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExCustomPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C673BE9C27A2BFA8002E7276 /* ExCustomPopup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExCustomPopup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C673BE9F27A2BFA8002E7276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C673BEA127A2BFA8002E7276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		C673BEA827A2BFAA002E7276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C673BEAB27A2BFAA002E7276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C673BEAD27A2BFAA002E7276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C673BEB327A2C02D002E7276 /* MyPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopupViewController.swift; sourceTree = "<group>"; };
+		C673BEB527A2C05F002E7276 /* MyPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E2E02ECDAD27EE50FF4048 /* Pods_ExCustomPopup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179575CB86C9856EA56AAB22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				554F93CD40CC77DEA71C16EC /* Pods-ExCustomPopup.debug.xcconfig */,
+				22B854C7D9C54098A72E98CC /* Pods-ExCustomPopup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2296F871D7931C166AF55E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CD492AB54E64C4398ECC5 /* Pods_ExCustomPopup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C673BE9327A2BFA8002E7276 = {
 			isa = PBXGroup;
 			children = (
 				C673BE9E27A2BFA8002E7276 /* ExCustomPopup */,
 				C673BE9D27A2BFA8002E7276 /* Products */,
+				179575CB86C9856EA56AAB22 /* Pods */,
+				2296F871D7931C166AF55E43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				C673BE9F27A2BFA8002E7276 /* AppDelegate.swift */,
 				C673BEA127A2BFA8002E7276 /* SceneDelegate.swift */,
 				C673BEA327A2BFA8002E7276 /* ViewController.swift */,
+				C673BEB327A2C02D002E7276 /* MyPopupViewController.swift */,
+				C673BEB527A2C05F002E7276 /* MyPopupView.swift */,
 				C673BEA527A2BFA8002E7276 /* Main.storyboard */,
 				C673BEA827A2BFAA002E7276 /* Assets.xcassets */,
 				C673BEAA27A2BFAA002E7276 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C673BEB027A2BFAA002E7276 /* Build configuration list for PBXNativeTarget "ExCustomPopup" */;
 			buildPhases = (
+				F75C607A2B345E0310092542 /* [CP] Check Pods Manifest.lock */,
 				C673BE9827A2BFA8002E7276 /* Sources */,
 				C673BE9927A2BFA8002E7276 /* Frameworks */,
 				C673BE9A27A2BFA8002E7276 /* Resources */,
+				55F6178F59DE1E0DC5D4193F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55F6178F59DE1E0DC5D4193F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExCustomPopup/Pods-ExCustomPopup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExCustomPopup/Pods-ExCustomPopup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExCustomPopup/Pods-ExCustomPopup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75C607A2B345E0310092542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExCustomPopup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C673BE9827A2BFA8002E7276 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +215,8 @@
 				C673BEA427A2BFA8002E7276 /* ViewController.swift in Sources */,
 				C673BEA027A2BFA8002E7276 /* AppDelegate.swift in Sources */,
 				C673BEA227A2BFA8002E7276 /* SceneDelegate.swift in Sources */,
+				C673BEB427A2C02D002E7276 /* MyPopupViewController.swift in Sources */,
+				C673BEB627A2C05F002E7276 /* MyPopupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +360,7 @@
 		};
 		C673BEB127A2BFAA002E7276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554F93CD40CC77DEA71C16EC /* Pods-ExCustomPopup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +389,7 @@
 		};
 		C673BEB227A2BFAA002E7276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B854C7D9C54098A72E98CC /* Pods-ExCustomPopup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

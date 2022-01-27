@@ -1,0 +1,6 @@
+framework module Pods_ExCustomPopup {
+  umbrella header "Pods-ExCustomPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}
